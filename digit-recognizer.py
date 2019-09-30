@@ -99,7 +99,7 @@ history = model.fit_generator(
 
 model.load_weights('best_model.h5')
 
-test = test.iloc[:,1:].values
+test = test.values
 test = test.reshape(-1,28,28,1)/255
 
 
